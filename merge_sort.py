@@ -1,4 +1,7 @@
 # Time complexity: O(NlogN)
+# 파이썬의 list slice notation을 사용하면 다음과 같이 간결한 코드를 작성할 수 있습니다. 
+# 하지만 list slice를 할 때 list의 복제가 일어나므로 메모리 사용 효율은 좋지 않습니다. 
+
 
 def merge_sort(arr):
   if len(arr) < 2:
@@ -21,5 +24,4 @@ def merge_sort(arr):
   merged_arr += low_arr[l:]
   merged_arr += high_arr[h:]
   return merged_arr
-
 
