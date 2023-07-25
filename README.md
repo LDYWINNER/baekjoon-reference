@@ -1,2 +1,2 @@
 # baekjoon-reference
-Personal studies related to DS &amp; Algorithm
+DS &amp; Algorithm &amp; Coding test prep
