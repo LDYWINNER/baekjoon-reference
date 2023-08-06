@@ -1,6 +1,6 @@
 n = int(input())
 k = int(input())
-data = [[0] * (n + 1) for _ in range(n + 1)] # 맵 정보
+data = [[0] * (n + 1) for _ in range(n + 1)] # 맵 정보 - 벽까지 카운트해서 n + 1
 info = [] # 방향 회전 정보
 
 # 맵 정보(사과 있는 곳은 1로 표시)
