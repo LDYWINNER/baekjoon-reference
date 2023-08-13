@@ -1,3 +1,7 @@
+# 탑다운 방식: 아래는 재귀 함수를 이용하여 dp 코드는 짰기 때문 큰 문제를 해결하기 위해
+# 작은 문제를 호출하는 방식이므로 탑다운 방식이라 부름
+
+
 # 한 번 계산된 결과를 메모이제이션(Memoization)하기 위한 리스트 초기화
 d = [0] * 100
 
@@ -14,3 +18,21 @@ def fibo(x):
     return d[x]
 
 print(fibo(99))
+
+
+# 시간 복잡도: O(N)
+
+
+# 호출되는 함수의 횟수 확인해보기
+d = [0] * 100
+
+def fibo(x):
+    print('f(' + str(x) + ')', end=' ')
+    if x == 1 or x == 2:
+        return 1
+    if d[x] != 0:
+        return d[x]
+    d[x] = fibo(x - 1) + fibo(x - 2)
+    return d[x]
+
+fibo(6)
